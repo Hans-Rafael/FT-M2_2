@@ -1,0 +1,23 @@
+// Código de Nav acá
+nav {
+  .flex(column, center, center);// traido de mixins.less
+  padding: 0.5em;
+  background-color: @nav-bg;
+  ul{
+    .flex(row, space-around, center);// traido de mixins.less
+    padding-top: 10px;
+    width: 45%;//separo los botones
+      a{
+        text-decoration: none;
+        color: @nav-font;
+        //font: bold 16px  Georgia, serif;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 0.5em;
+        }  
+    }
+    @media @phone{
+      width:90%;
+      
+    }
+ }

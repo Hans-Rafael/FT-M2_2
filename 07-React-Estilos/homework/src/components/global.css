@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,400;1,700&display=swap');
+
+:root{
+  --primary-color:#476072;
+  --primary-fon:#EEEEEE;
+  --body-color:#ddddb4;
+}
+
+body {
+  font-family: "Barlow",sans-serif,Arial;
+  background-color: var(--body-color);
+}
+.title{text-transform:capitalize;
+text-align:center;
+background-color: var(--primaty-color);}

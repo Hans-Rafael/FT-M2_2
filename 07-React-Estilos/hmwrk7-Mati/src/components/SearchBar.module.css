@@ -1,0 +1,14 @@
+.searchButton {
+    border: none;
+    border-radius: .2rem;
+    padding: .5rem;
+    background-color: #0f5dee;
+    margin: .3rem;
+}
+
+.searchInput {
+    border: none;
+    background-color: rgb(228, 15, 15);
+    border-radius: .2rem;
+    padding: .5rem;
+}

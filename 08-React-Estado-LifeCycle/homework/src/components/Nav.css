@@ -1,0 +1,31 @@
+#logoHenry{
+  margin-right: 20px;
+}
+.logo {
+  margin-left: 10px;
+  width : auto;
+  height:auto;
+}
+.header{
+  background-color: aqua;
+  display:flex;
+  justify-content: space-between;/* spacio entre contenedores o div */
+  align-items: center;/* alinea centra entre arriba y abajo */
+}
+.titulo{
+  font-size: 24px;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+.seach{
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+
+}

@@ -1,0 +1,9 @@
+.App {
+    min-height: 100vh;
+    background-color: rgb(214 214 215);
+}
+.header {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding:  1rem;
+}

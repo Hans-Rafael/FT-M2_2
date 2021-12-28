@@ -1,0 +1,33 @@
+.app{
+    background-image: url("../assets/bkg.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*filter: blur(10px);*/
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    position:absolute;
+}
+.bkg{
+    width: 100vW;
+    height: 100vh;
+    /*filter: blur(16px);*/
+    
+}
+
+.container{
+    background-image: url("../assets/bkg.jpg");
+    /*filter:blur(16px);*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width:70vw;
+    height: 70vh;
+    margin: 15vh 15vw;
+    border-radius: 5rem;
+    top:0;
+    overflow:hidden;
+    text-align: center;
+    
+}

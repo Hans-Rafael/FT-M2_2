@@ -1,0 +1,47 @@
+.card{
+    display: flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items: center;
+    width:40rem;
+    color:rgb(22, 21, 21);
+    
+}
+ .card + .card{
+border-left: solid 1px black;
+} 
+.card > img{
+ width : 5rem;
+height: 5rem; 
+
+}
+/* .primary{
+   display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 5vh 15 vh;
+    width: 30rem;
+    padding: 0 0.5 rem;
+     
+} */
+.primary>span{
+     margin-top:0.5rem;
+    grid-column:1/span 2 
+}
+.primary > img{
+     width: 8rem;
+    height:8rem; 
+}
+.name{
+    border-radius:20%;
+    background-color: rgb(177, 212, 21);
+    padding: 0.25 rem 0.75rem;
+    font-weight:700;
+    
+}
+.temp{
+     display: flex;
+    flex-direction: column;
+    width:3rem;
+    justify-content: center;
+    text-align: center; 
+}

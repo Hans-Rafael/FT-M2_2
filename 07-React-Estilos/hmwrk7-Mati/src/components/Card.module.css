@@ -1,0 +1,35 @@
+.cardContainer {
+    background-color: white;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    border: rgb(185, 185, 185) solid 1px;
+    box-shadow: 5px 5px 5px 1px rgba(149, 144, 144, 0.2);
+    
+}
+
+.temperatureContainer {
+    display: flex;
+    align-items: center;
+    padding:  0 0.3rem 0.3rem 0.3rem;
+    margin: 0  0.5rem 0.5rem 0.5rem;
+}
+
+.temperatureElement {
+    padding: 0.2rem;
+    margin: 0.2rem;
+}
+
+.title {
+    text-align: center;
+    margin: 0;
+}
+.closeButton {
+    border: none;
+    margin-left: 87%;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    background: #9fc1ff;
+}

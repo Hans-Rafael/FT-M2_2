@@ -1,0 +1,19 @@
+.button{
+    border-radius:50%;
+    background-color: rgb(214, 236, 14);
+    color:rgb(6, 250, 136);
+    font-weight:700;
+    text-transform: Capitalize;
+    padding:0.5rem 1rem;
+    margin: 0 0.25rem;
+    border:solid 2px transparent;
+   
+    transition:background-color 0.5s;
+    cursor: pointer;
+}
+/* .button:hover{
+    background-color:red;
+}
+.button:focus{
+    outline:none;
+} */

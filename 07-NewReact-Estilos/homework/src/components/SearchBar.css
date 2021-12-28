@@ -1,0 +1,20 @@
+.input {
+    border: none;
+    text-align: center;
+    background-color: rgb(214, 116, 35);
+    border-radius: .5rem;
+    padding: .5rem;
+    text-align: center;
+}
+.button {
+    border: none;
+    background-color: blue;
+    border-radius: .2rem;
+    padding: .5rem;
+    margin: .3rem;
+    text-align: center;
+
+}
+.color{
+    background-color: chocolate;
+}

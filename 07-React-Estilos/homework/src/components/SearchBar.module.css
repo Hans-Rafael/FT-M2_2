@@ -1,0 +1,31 @@
+.SearchBar{
+    text-align: center;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+         
+}
+.color{
+    background-color: chocolate;
+}
+.btn{
+border-radius: 1rem;
+background-color: #201b07;
+color:rgb(6, 250, 136);
+font-weight:500;
+text-transform: Capitalize;
+padding:0.5rem 1rem;
+margin: 0 0.25rem;
+border:solid 2px transparent;
+transition:background-color 0.5s;
+
+} 
+
+.btn:hover{
+    background-color:red;
+}
+.btn:focus{
+    outline:none;
+}
