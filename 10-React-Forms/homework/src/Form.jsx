@@ -1,9 +1,14 @@
 import React from 'react';
 
 export default function  Form() {
-  return (
+  return (  
+    <form>
       <div>
-        Componente Form
+        <label>Username:</label>
+        <input type="text" name="username" />
       </div>
+    </form>
+  )
+}
   )
 }
