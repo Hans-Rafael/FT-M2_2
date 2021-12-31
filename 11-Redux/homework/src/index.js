@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import Counter from './components/Counter';
+import About from './About';
 import counter from './reducers';
 
 // Esta línea instancia nuestro store central de Redux.
@@ -18,7 +19,10 @@ const store = createStore(counter);
 // El componente Provider es donde "vive" el store.
 ReactDOM.render(
   <Provider store={store}>
+    {/* <Brouser router> */}
     <Counter />
+    <About/>
+    {/* </Brouser router> */}
   </Provider>,
   document.getElementById('root')
 );
