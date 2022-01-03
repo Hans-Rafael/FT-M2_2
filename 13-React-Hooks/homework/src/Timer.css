@@ -19,7 +19,7 @@
 .button {
   padding: .6rem 1.5rem;
   margin: .4rem;
-  border-radius: 3px;
+  border-radius: 8px;
   text-transform: uppercase;
   font-weight: 600;
   font-size: .8rem;
@@ -33,16 +33,35 @@
 .button-primary:hover {
   background-color: #2641d4;
   border: 1px solid #1b1f2b;
+  border-radius: 5px;
 }
 
-.button-primary-active {
+.button-primary-inactive {
   background-color: #3151ff;
   border: 1px solid #152684;
   color: white;
 }
 
-.button-primary-inactive {
-  background-color: #0f218a;
+.button-primary-active {
+  background-color: #0f8a34;
+  border: 1px solid #152684;
+  color: white;
+}
+
+.button-secondary:hover {
+  background-color: #0d886d;
+  border: 1px solid #1b1f2b;
+  border-radius: 5px;
+}
+
+.button-secondary-inactive {
+  background-color: #3151ff;
+  border: 1px solid #152684;
+  color: white;
+}
+
+.button-secondary-active {
+  background-color: #810909;
   border: 1px solid #152684;
   color: white;
 }
