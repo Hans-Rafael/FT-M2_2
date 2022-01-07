@@ -46,4 +46,4 @@ function mapDispatchToProps(dispatch) {
 export default connect(mapStateToProps, mapDispatchToProps)(Movie);
 
 
-export default (Movie);
+//export default (Movie);

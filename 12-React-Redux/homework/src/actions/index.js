@@ -8,13 +8,13 @@ const GET_MOVIES = "GET_MOVIES"
  /**addMovieFavorite */
 
 
- export function addMovieFavorite(payload) {
+ /* export function addMovieFavorite(payload) {
     return { type: "ADD_MOVIE_FAVORITE", payload };
-  }
+  } */
 
-  export function removeMovieFavorite(payload) {
+  /* export function removeMovieFavorite(payload) {
     return { type: "REMOVE_MOVIE_FAVORITE", payload };
-  }
+  } */
   
   export function getMovies(titulo) {
     return function(dispatch) {

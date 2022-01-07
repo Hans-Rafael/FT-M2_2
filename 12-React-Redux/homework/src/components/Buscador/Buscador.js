@@ -3,6 +3,11 @@ import { connect } from "react-redux";
 import { Link } from 'react-router-dom';
 import './Buscador.css';
 import { getMovies } from "../../actions";
+import { addMovieFavorite } from "../../actions";
+//import {mapDispatchToProps} from '../../actions';
+//import {mapStateToProps} from '../../Favorites/Favorites';
+
+
 
 
 export class Buscador extends Component {
