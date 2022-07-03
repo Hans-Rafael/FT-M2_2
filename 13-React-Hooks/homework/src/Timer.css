@@ -65,3 +65,60 @@
   border: 1px solid #152684;
   color: white;
 }
+.button-dos:hover {
+  background-color: #0d886d;
+  border: 1px solid #1b1f2b;
+  border-radius: 5px;
+}
+.button-dos-inactive {
+  background-color: #3151ff;
+  border: 1px solid #152684;
+  color: white;
+}
+
+.button-dos-active {
+  background-color: #810909;
+  border: 1px solid #152684;
+  color: white;
+}
+/* Variables de color si el tema es nulo o light */
+html {
+  --primary-color: #282c34;
+  --secondary-color: #fff;
+}
+
+/* Variables de color si el tema es dark */
+html[data-theme="dark"] {
+  --primary-color: #fff;
+  --secondary-color: #282c34;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: var(--secondary-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: var(--primary-color);
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

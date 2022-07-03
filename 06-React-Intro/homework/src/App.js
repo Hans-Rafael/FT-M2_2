@@ -12,20 +12,20 @@ import SearchBarClass from './classComponentss/SearchBarClasses';
 function App() {
   return (
     <div className="App">
-            <div>
+      <div>
         <SearchBarClass
-          onSearch={(evento)=>alert('Digo Alerta !!')}
+          onSearch={(evento) => alert('Digo Alerta !!')}
         />
-      <hr />
+        <hr />
       </div>
       <div>
-        <CardClasses
+        <Card
           max={Londres.main.temp_max}
           min={Londres.main.temp_min}
           name={Londres.name}
           weather={Londres.weather[0].description}
           img={Londres.weather[0].icon}
-          onClose={() => alert(Londres.name)}     
+          onClose={() => alert(Londres.name)}
         />
       </div>
       <hr />

@@ -1,11 +1,17 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './Timer.css';
+import logo from './DayN.png';
 
 //**************** */
 const Timer = () => {
   const [segundos, setSegundos] = useState(0);
   const [activo, setActivo] = useState(false);
   const [tipo, setTipo] = useState('Contador');
+  const[bkgcolor, setBkgcolor] = useState('#fff');
+  const [checked, setChecked] = useState(
+    localStorage.getItem("theme") === "dark" ? true : false
+  );
+
 
 //***** */
   function toggle() {
@@ -15,6 +21,12 @@ const Timer = () => {
     setSegundos(0);
     setActivo(false);
   }
+
+  function reset2() {
+    setBkgcolor('red');
+    setActivo(false);
+  }
+
   function cambioTipo() {
     if (tipo === 'Contador') setTipo('Cuenta Regresiva')
     if (tipo === 'Cuenta Regresiva') setTipo('Contador')
@@ -34,6 +46,27 @@ const Timer = () => {
     return () => clearInterval(intervalo);
   }, [activo, segundos, tipo]); */
 
+  useEffect(() => {
+    document
+      .getElementsByTagName("HTML")[0]
+      .setAttribute("data-theme", localStorage.getItem("theme"));
+  }, [checked]);
+
+  /**
+   * Actualiza el estado checked y el contenido de nuestro objeto
+   * theme en el localStorage basados en el checkbox
+   */
+  const toggleThemeChange = () => {
+    if (checked === false) {
+      localStorage.setItem("theme", "dark");
+      setChecked(true);
+    } else {
+      localStorage.setItem("theme", "light");
+      setChecked(false);
+    }
+  };
+
+  //******* */
   //useEffect cuenta regresiva
   useEffect(() => {
     let intervalo = null;
@@ -72,7 +105,12 @@ const Timer = () => {
 
   //************************ */
   return (
-    <div className="app">
+    <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>Click para cambiar el tema</p>
+        <label>
+        {/* <div className="app"> */}
+
       <div className="time">
         {segundos}s
       </div>
@@ -88,7 +126,23 @@ const Timer = () => {
         {tipo}
       </button>
       {tipo === 'Cuenta Regresiva' && <input type="number" placeholder="Ingresa Segundos" autoComplete="off" ref={myRef} onChange={agregaSegundos}/>}
-    </div>
+      
+      {/* prueba botonn extra reset background */}
+
+      {/* <button className={`button button-dos button-dos-${activo ? 'active' : 'inactive'}`} onClick={reset2}>
+          {activo ? 'Reset' : 'Reset'}
+        </button> */}
+        
+        {/* <div className="App"> */}
+      
+          <input
+            type="checkbox"
+            defaultChecked={checked}
+            onChange={() => toggleThemeChange()}
+          />
+        </label>
+      </header>
+
   );
 };
 
